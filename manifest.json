@@ -1,0 +1,15 @@
+
+{
+    "manifest_version": 2,
+    "name": "技術書典頒布状況支払いサマリー",
+    "description": "技術書典のかんたん後払いの結果を集計します",
+    "version": "1.0",
+  
+    "content_scripts": [
+      {
+        "matches": ["https://techbookfest.org/market/distributor/watch"],
+        "js": ["script.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
